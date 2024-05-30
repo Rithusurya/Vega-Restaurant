@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\Admin\Desktop\Vega Restaurant\image\icons8-food-bar-100.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="npm i bootstrap@5.3.2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Vega Restaurant</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <h1> <span>V</span>ega <span>R</span>estaurant</h1>
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <a href="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/about/index.html">
+                        <li>ABOUT</li>
+                    </a>
+                    <a href="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/book%20table/index.html">
+                        <li>BOOK TABLE</li>
+                    </a>
+
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">MENU</a>
+                        <div class="dropdown-content">
+                            <a
+                                href="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/cuisine/cuisine.html">Indian</a>
+                            <a
+                                href="file:///C:/Users/Dell/Desktop/Vega%20Restaurant/cuisine/Chinese/index.html">Chinese</a>
+                            <a
+                                href="file:///C:/Users/Dell/Desktop/Vega%20Restaurant/cuisine/Arabian/index.html">Arabian</a>
+                            <a
+                                href="file:///C:/Users/Dell/Desktop/Vega%20Restaurant/cuisine/Italian/index.html">Italian</a>
+                </ul>
+            </div>
+
+            <!-- search bar-->
+
+            <div class="togglesearch">
+                <input type="text" id="search-cuisine" placeholder="Your favorite Cuisine" />
+                <input type="button" id="search-btn" value="Search" />
+            </div>
+
+
+
+
+    </header>
+    <div class="home">
+        <div class="main_slide">
+
+            <h1>Enjoy <span>Delious Food </span> <br>in Your Healthy Life</h1>
+            <h2>we are Opening New Restaurant.</h2>
+            <p> <span class="quotes">Rain or shine, it’s a fine time to dine.</span>It’s time to enjoy the finer things
+                in life.
+            </p>
+
+            <a href="file:///C:/Users/Dell/Desktop/Vega%20Restaurant/Variety%20food/index.html"><button
+                    class="red_btn"><span>visit now </span></button></a>
+        </div>
+        <img class="image" src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/pngwing.com%20(24).png"
+            alt="errorerror" width="40%">
+    </div>
+    <!-- our menu bar -->
+
+    <div class="our-menu">
+        <div class="our_menu-text">
+            <h1>OUR MENU </h1>
+            <h2><span>A VARIETY </span>OF GREAT DISHES</h2>
+        </div>
+        <div class="variety-food">
+            <div class="salads">
+                <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/%E2%80%94Pngtree%E2%80%94fresh%20spring%20salad%20food%20vegetables_5570560.png"
+                    alt="errorerror">
+                <a href="file:///C:/Users/Dell/Desktop/Vega%20Restaurant/Variety%20food/index.html">salads</a>
+            </div>
+            <div class="pizzas">
+                <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/pizza-png-19321.png" alt="errorerror">
+                <a href="">pizzas</a>
+            </div>
+            <div class="burgers">
+                <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/burger-png-png-images-yellow-images-12.png"
+                    alt="error">
+                <a href="">burgers</a>
+            </div>
+            <div class="deserts">
+                <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/images.jpeg" alt="error">
+                <a href="">desserts</a>
+            </div>
+            <div class="drinks">
+                <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/11aabe6a21396480c0ae9105b56abf9f.jpg"
+                    alt="error">
+                <a href="">drinks</a>
+            </div>
+            <div class="sea-foods">
+                <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/images%20(1).jpeg" alt="error">
+                <a href="">sea food</a>
+            </div>
+        </div>
+    </div>
+    <!-- our menu bar end-->
+
+
+    <!-- 3rd container -->
+
+
+    <!-- food items container-->
+    <div class="cuisine_items">
+
+
+        <div class="cuisine_menu">
+            <!-- cuisine menu button  -->
+
+            <h1 class="starts">IN MY </h1>
+            <h1 class="starts2">KITCHEN </h1>
+            <div class="btn_menu">
+                <button id="Indian" onclick="changeCuisine('Indian')">Indian</button>
+                <button id="Italian" onclick="changeCuisine('Italian')">Italian</button>
+                <button id="Arabian" onclick="changeCuisine('Arabian')">Arabian</button>
+                <button id="Chineses" onclick="changeCuisine('Chineses')">Chineses</button>
+
+            </div>
+
+            <div class="cuisine_img">
+                <div class="briyani">
+                    <img id="Image"
+                        src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/pngwing.com%20(28).png" alt=""
+                        width="300px" height="300px">
+
+                    <div class="cuisine_text">
+                        <h3 id="Description">chicken curry</h3>
+                        <p id="Para">kerala style with coconut milk</p>
+                        <a href=""> ₹399</a>
+                    </div>
+                </div>
+                <!-- 2nd image -->
+                <div class="north_indian">
+                    <img id="Image2"
+                        src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/pngwing.com%20(27).png" alt=""
+                        width="300px" height="300px">
+                    <div class="cuisine_text">
+                        <h3 id="Description2">fried red snapper</h3>
+                        <p id="Para">it has a sweet,unique flavor</p>
+                        <a href="">₹439</a>
+                    </div>
+                </div>
+                <!-- 3rd image -->
+                <div class="south_indian">
+                    <img id="Image3"
+                        src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/indian-food-dish-png.png"
+                        alt="" width="300px" height="300px">
+                    <div class="cuisine_text">
+                        <h3 id="Description3">lunch full meals </h3>
+                        <p id="Para">it has south indian style.</p>
+                        <a href="">₹299</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 2nd container banner-->
+
+
+    <div class="main_slide2">
+        <div class="fooding">
+            <img class="images" src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/pngwing.com%20(17).png"
+                alt="Food Image">
+        </div>
+        <div class="question">
+            <h2>Why Choose Us?</h2>
+            <div class="q-ans">
+                <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/pngwing.com%20(22).png"
+                    alt="Icon">
+                <div>
+                    <h4>Delicious Options</h4>
+                    <p>Explore a variety of mouth-watering dishes crafted with passion and quality ingredients.</p>
+                </div>
+            </div>
+            <div class="q-ans">
+                <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/pngwing.com%20(18).png"
+                    alt="Icon">
+                <div>
+                    <h4>Healthy Choices</h4>
+                    <p>Our menu features nutritious and wholesome meals to cater to your well-being.</p>
+                </div>
+            </div>
+            <div class="q-ans">
+                <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/pngwing.com%20(29).png"
+                    alt="Icon">
+                <div>
+                    <h4>Culinary Excellence</h4>
+                    <p>Experience culinary excellence with our expertly crafted dishes that delight the senses.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 2nd container banner end-->
+
+
+
+    <div class="main_slide3">
+        <div class="fav-head">
+            <h1> our popular food items</h1>
+        </div>
+        <div class="fav-food">
+            <div class="item">
+                <div class="item_img">
+                    <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/pngwing.com%20(10).png"
+                        alt="errorerror">
+                </div>
+                <h3> Steamed fish with soy sauce</h3>
+                <div class="paragraph">
+                    <p>A healthy and very delicious dish!<br>
+                    </p>
+                    <p class="fav-price">$2.55</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/pngwing.com%20(23).png"
+                        alt="errorerror">
+                </div>
+
+                <h3> Barbecue grill with meat</h3>
+                <div class="paragraph">
+                    <p>Barbecue, at its most basic, is an alchemy of wood, smoke and meat,
+                    </p>
+                    <p class="fav-price">$4.55</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item_img">
+                    <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/farfalle-pasta-with-meatballs-spinach-sauce-with-fried-chickpeas.jpg"
+                        alt="errorerror">
+                </div>
+                <h3> Farfalle pasta with meatballs</h3>
+                <div class="paragraph">
+                    <p>Farfalle are a very popular pasta shape, especially in Northern Italy!</p>
+                    <p class="fav-price">$6.73</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_img">
+                    <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/pngwing.com.png"
+                        alt="errorerror">
+                </div>
+                <h3> Beef Chow Mein with beef</h3>
+                <div class="paragraph">
+                    <p>This beef chow mein is tender steak stir fried with vegetables and noodles in a flavorful sauce.
+                    </p>
+                    <p class="fav-price">$7.65</p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="dsgn"></div>
+    </div>
+
+
+
+    <!-- feedback section -->
+    <div class="feedback">
+        <div class="form-container">
+            <p class="title">Share Your Thoughts!</p>
+            <form class="form">
+                <input type="text" class="input" placeholder="Your Name">
+                <input type="email" class="input" placeholder="Email">
+                <input type="text" class="input" placeholder="Share Feedback">
+                <p class="page-link">
+                    
+                </p>
+                <button class="form-btn">Share</button>
+            </form>
+            <p class="sign-up-label">
+                Don't have an account?<span class="sign-up-link">Sign up</span>
+            </p>
+            <div class="buttons-container">
+
+
+                <div class="google-login-button">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" x="0px" y="0px"
+                        class="google-icon" viewBox="0 0 48 48" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12
+      c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24
+      c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path>
+                        <path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657
+      C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path>
+                        <path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36
+      c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path>
+                        <path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571
+      c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z">
+                        </path>
+                    </svg>
+                    <span>Log in with Google</span>
+                </div>
+            </div>
+        </div>
+        <div class="working_gallery">
+            <div class="working_hours">
+                <div class="text_detail">
+
+                    <p>About us</p>
+                    <h1>working hours</h1>
+                    <button>More info!!</button>
+                </div>
+                <div class="table">
+                    <p>Monday To Friday</p>
+                    <h3>10 : 00 AM</h3>
+                    <h3>22 : 00 PM</h3>
+                    <p>Saturday and Sunday</p>
+                    <h3>12 : 00 PM</h3>
+                    <h3>23 : 00 PM</h3>
+
+                </div>
+            </div>
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <div class="gal_img">
+                    <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/nick-karvounis-Ciqxn7FE4vE-unsplash.jpg" alt="">
+                    <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/piotr-szulawski-DCmUhk54F6M-unsplash.jpg" alt="">
+                    <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg" alt="">
+                    <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/josh-wilburne-hPeGDIGHnoI-unsplash.jpg" alt="">
+                    <img src="file:///C:/Users/Dell/OneDrive/Desktop/Vega%20Restaurant/jason-leung-poI7DelFiVA-unsplash.jpg" alt="">
+                    <button>More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- working hours -->
+
+    <!-- working hours end-->
+
+
+    <!-- Gallery section -->
+
+    <!-- Gallery section end-->
+
+
+
+
+    <!-- footer section -->
+    <div class="footer">
+        <h1>INFORMATION</h1>
+        <div class="information">
+            <div class="ftr-text">
+                <a href="#" class="abouts-us">About-us</a>
+                <a href="#" class="FAQ">FAQ</a>
+                <a href="#" class="contact-us">Contact us</a>
+                <a href="#" class="location">location</a>
+                <a href="#" class="help">Help</a>
+                <a href="#" class="my-service">My service</a>
+            </div>
+            <div class="personal-details">
+                <div class="logo">
+                    <!-- <img src="C:\Users\Dell\Desktop\Vega Restaurant\Untitled1.png" alt="error"> -->
+                </div>
+                <div class="contact">
+                    <a href=""> <i class="fa-brands fa-whatsapp"></i>+91 6381022997</a>
+                </div>
+                <div class="email">
+                    <a href="https://mail.google.com/mail/u/1/#inbox"> <i
+                            class="fa-regular fa-envelope"></i>Rithusurya4@gmail.com</a>
+                </div>
+                <div class="my-portfolio">
+                    <a href="https://rithusurya.github.io/portfolio/"><i class="fa-regular fa-file"></i>My-portfolio</a>
+                </div>
+            </div>
+            <div class="social-logo">
+                <a href=""><i class="fa-brands fa-facebook" style="color: #FFD43B;"></i></a>
+                <a href=""><i class="fa-brands fa-github" style="color: #FFD43B;"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter" style="color: #FFD43B;"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin" style="color: #FFD43B;"></i></a>
+                <a href=""><i class="fa-solid fa-square-envelope" style="color: #FFD43B;"></i></a>
+
+            </div>
+
+        </div>
+
+        <p style="color: rgb(164, 160, 160);">© Vega Restaurant 2024 . All rights reserved. Design by Rithusurya</p>
+    </div>
+
+
+
+
+
+
+
+    <script src="C:\Users\Dell\OneDrive\Desktop\Vega Restaurant\script.js">
+
+    </script>
+</body>
+
+</html>
